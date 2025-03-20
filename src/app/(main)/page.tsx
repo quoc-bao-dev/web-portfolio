@@ -1,7 +1,7 @@
 'use client';
 
-import { sNavActive } from '@/components/layouts/NavBar';
 import { NAV_ITEMS } from '@/constants/navbar';
+import { useNavbar } from '@/store/useNavbar';
 import { useEffect } from 'react';
 import AboutSection from './partials/AboutSection';
 import ContactSection from './partials/ContactSection';
@@ -10,6 +10,7 @@ import ProjectSection from './partials/ProjectSection';
 import SkillSection from './partials/SkillSection';
 
 export default function Home() {
+    const { setTab } = useNavbar();
     const handleScroll = () => {
         NAV_ITEMS.forEach((item) => {
             const element = document.getElementById(item.label)!;
@@ -23,7 +24,7 @@ export default function Home() {
                         window.innerHeight / 2) ||
                 (rect.top <= 0 && rect.bottom >= window.innerHeight)
             ) {
-                sNavActive.set(item.label);
+                setTab(item.label);
                 if (rect.top >= -100 && rect.top <= 100) {
                     element.scrollIntoView({ behavior: 'smooth' });
                 }
