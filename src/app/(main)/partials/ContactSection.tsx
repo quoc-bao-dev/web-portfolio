@@ -6,7 +6,7 @@ const ContactSection = () => {
             <Container>
                 <div className="py-24 ">
                     <div className="pt-16">
-                        <div className="p-16  rounded-lg bg-primary-900 dark:bg-primary-900/35 text-primary-100/60 grid grid-cols-3 gap-5">
+                        <div className="p-16  rounded-lg bg-primary-100  text-primary-900 grid grid-cols-3 gap-5">
                             <div className="w-full col-span-2">
                                 <h3 className="text-2xl text-center">
                                     Contact

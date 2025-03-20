@@ -23,9 +23,11 @@ const SkillSection = () => {
         <section id="Skill">
             <Container>
                 <div className="py-24 min-h-screen">
-                    <h2 className="text-primary text-3xl text-center">Skill</h2>
+                    <h2 className="text-primary text-3xl text-center">
+                        Technical Skills
+                    </h2>
                     <div className="pt-16">
-                        <div className="p-16 border-border rounded-lg dark:bg-card  bg-primary-100 text-primary/60 grid grid-cols-6 gap-10">
+                        <div className="p-16 border-border rounded-lg dark:bg-card  bg-primary-100 text-primary grid grid-cols-6 gap-10">
                             <AnimatedCard label="React">
                                 <ReactJs />
                             </AnimatedCard>

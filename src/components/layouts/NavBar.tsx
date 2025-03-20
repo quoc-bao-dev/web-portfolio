@@ -12,7 +12,7 @@ interface NavBarItemProps {
 const NavBarItem = ({ label }: NavBarItemProps) => {
     return (
         <li
-            className="relative px-6 py-1"
+            className="relative px-6 py-1 cursor-pointer"
             onClick={() => {
                 sNavActive.set(label);
                 document.getElementById(label)!.scrollIntoView({
@@ -51,7 +51,7 @@ const NavBarItem = ({ label }: NavBarItemProps) => {
 const NavBar = () => {
     return (
         <nav>
-            <ul className="flex items-center gap-8">
+            <ul className="flex items-center gap-5">
                 {NAV_ITEMS.map((item) => {
                     return <NavBarItem key={item.label} label={item.label} />;
                 })}

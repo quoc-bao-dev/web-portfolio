@@ -49,7 +49,7 @@ const AboutSection = () => {
                             />
                         </motion.div>
                         <motion.div
-                            className="w-full p-8 bg-primary-100 dark:bg-card text-primary/60 dark:text-primary/75 dark:border border-border rounded-lg"
+                            className="w-full p-8 bg-primary-100 dark:bg-card text-primary dark:text-primary dark:border border-border rounded-lg"
                             initial="hidden"
                             ref={textRef}
                             animate={textInView ? 'visible' : 'hidden'}
@@ -60,33 +60,45 @@ const AboutSection = () => {
                                 delay: 0.2,
                             }}
                         >
-                            <p className="leading-6">
+                            <p className="text-lg">
                                 My name is Quoc Bao, a Front-end Developer with
                                 a deep passion for technology. One of my most
                                 inspiring achievements is building Qyber, a
-                                custom library designed to simplify workflows
-                                and automate processes. This project reflects my
-                                commitment to creating efficient and streamlined
-                                solutions that make development easier and more
-                                productive.
+                                JavaScript library written in TypeScript for
+                                building Single Page Applications (SPA). This
+                                project reflects my commitment to creating
+                                efficient and streamlined solutions that make
+                                development easier and more productive.
                             </p>
 
                             <p className="mt-6 font-medium text-lg">
                                 My Strengths:
                             </p>
                             <ul className="mt-1">
-                                <li>• ReactJS, Next.js, TypeScript.</li>
                                 <li>
-                                    • State management (Redux, Context API).
-                                </li>
-                                <li>• Responsive Design and UI/UX.</li>
-                                <li>
-                                    • Logical thinking and problem-solving
-                                    skills
+                                    • Proficient in ReactJS, Next.js, and
+                                    TypeScript, delivering robust and scalable
+                                    web applications.
                                 </li>
                                 <li>
-                                    • Passionate about simplifying complex
-                                    workflows
+                                    • Expertise in state management solutions
+                                    such as Redux and Context API for seamless
+                                    application performance.
+                                </li>
+                                <li>
+                                    • Skilled in crafting responsive designs
+                                    with a strong focus on intuitive UI/UX
+                                    experiences.
+                                </li>
+                                <li>
+                                    • Strong analytical and problem-solving
+                                    abilities to tackle complex challenges
+                                    effectively.
+                                </li>
+                                <li>
+                                    • Dedicated to optimizing workflows and
+                                    simplifying intricate processes with
+                                    innovative solutions.
                                 </li>
                             </ul>
                         </motion.div>
