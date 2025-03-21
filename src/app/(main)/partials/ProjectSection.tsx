@@ -32,11 +32,13 @@ const projects = [
         techStack: ['React.js', 'Tailwind'],
         detail: {
             description:
-                'Ng Learn is a comprehensive platform for developers to explore and share Angular knowledge, featuring tutorials, code examples, and a community forum.',
+                'Ng Learn is a platform for sharing programming knowledge and providing tools for developers, including cloud services and development tools.',
             features: [
                 'Interactive tutorials with step-by-step guidance.',
-                'Code examples for common Angular use cases.',
+                'Code examples for common use cases.',
                 'Community forum for discussions and Q&A.',
+                'Cloud services and tools for developers.',
+                'Courses and knowledge sharing for developers.',
             ],
         },
         link: 'https://nglearns.dev/',
@@ -48,12 +50,12 @@ const projects = [
         techStack: ['Typescript'],
         detail: {
             description:
-                'Qyber is a robust UI library crafted to streamline the development of modern web applications with reusable and efficient components.',
+                'Qyber is a powerful UI library designed to optimize the development of modern web applications with reusable and efficient components.',
             features: [
-                'Core features include components, signals, and routing.',
+                'Core components including components, signals, and routing.',
                 'Highly customizable and reusable components.',
-                'Optimized for performance and scalability.',
-                'Comprehensive documentation and examples.',
+                'Performance optimization and scalability.',
+                'Detailed documentation and examples.',
             ],
         },
         link: 'https://www.npmjs.com/package/qyber',
@@ -65,12 +67,11 @@ const projects = [
         techStack: ['Javascript', 'HTML', 'CSS'],
         detail: {
             description:
-                'Qyber is a robust UI library crafted to streamline the development of modern web applications with reusable and efficient components.',
+                'Happy Bee is a simple and entertaining game where players control a bee to collect honey and avoid obstacles.The game is built using vanilla JavaScript, HTML, and CSS without relying on any external libraries or frameworks.',
             features: [
-                'Core features include components, signals, and routing.',
-                'Highly customizable and reusable components.',
-                'Optimized for performance and scalability.',
-                'Comprehensive documentation and examples.',
+                'Simple and addictive gameplay.',
+                'Friendly and cute graphic design.',
+                'Suitable for all ages.',
             ],
         },
         link: 'https://happy-bee.quocbaoart.com/',

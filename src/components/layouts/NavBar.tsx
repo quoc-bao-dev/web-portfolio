@@ -4,6 +4,7 @@ import { NAV_ITEMS } from '@/constants/navbar';
 import { cn } from '@/lib/utils';
 import { useNavbar } from '@/store/useNavbar';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 interface NavBarItemProps {
     label: string;
@@ -44,6 +45,10 @@ const NavBarItem = ({ label }: NavBarItemProps) => {
     );
 };
 const NavBar = () => {
+    // const setTab = useNavbar((state) => state.setTab);
+    // useEffect(() => {
+    //     setTab(NAV_ITEMS[0].href);
+    // }, []);
     return (
         <nav>
             <ul className="flex items-center gap-5">

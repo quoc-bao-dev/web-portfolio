@@ -71,18 +71,23 @@ export default function ProjectCard(props: ProjectCardProps) {
 
                     {/* Mặt sau */}
                     <div
-                        className="w-full h-full absolute top-0 left-0 bg-primary-900 text-primary-100 text-center px-4 rounded-lg flex flex-col justify-center"
+                        className="w-full h-full absolute top-0 left-0 bg-primary-900 text-primary-100 px-4 rounded-lg flex flex-col justify-center"
                         style={{
                             backfaceVisibility: 'hidden',
                             transform: 'rotateY(180deg)',
                         }}
                     >
-                        <h3 className="text-xl font-semibold">{props.title}</h3>
+                        <h3 className="text-xl font-semibold text-center">
+                            {props.title}
+                        </h3>
                         <p className="text-sm mt-2">{props.description}</p>
-                        <p className="text-sm mt-2">Feature: </p>
+                        <p className="text-sm mt-2 font-semibold">Feature: </p>
                         <ul className="text-sm ">
                             {props.feature.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <li key={index} className="flex ">
+                                    <span className="w-2 h-2 bg-primary-100 rounded-full mr-2 mt-1.5"></span>
+                                    {item}
+                                </li>
                             ))}
                         </ul>
                     </div>

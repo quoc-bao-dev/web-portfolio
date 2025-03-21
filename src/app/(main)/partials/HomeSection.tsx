@@ -2,7 +2,7 @@
 
 import ReactJs from '@/components/icons/ReactJs';
 import Container from '@/components/layouts/Container';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -12,6 +12,34 @@ const fadeInVariants = {
 };
 
 const HomeSection = () => {
+    const controls = useAnimation();
+    const controls2 = useAnimation();
+    const startHoverImage = () => {
+        controls.start({
+            scale: 1.1,
+            rotate: 10,
+            transition: { duration: 0.3 },
+            opacity: 0.5,
+            boxShadow:
+                '0 0 20px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.6)',
+        });
+        controls2.start({
+            boxShadow:
+                '0 0 20px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.6)',
+        });
+    };
+    const endHoverImage = () => {
+        controls.start({
+            scale: 1,
+            rotate: 0,
+            opacity: 0,
+            transition: { duration: 0.3 },
+            boxShadow: 'none',
+        });
+        controls2.start({
+            boxShadow: 'none',
+        });
+    };
     return (
         <section
             id="Home"
@@ -36,7 +64,7 @@ const HomeSection = () => {
                         <div className="flex items-center h-full pt-16 md:pt-0">
                             <div>
                                 <h1 className="text-3xl md:text-[64px] md:leading-[72px] font-bold text-primary dark:text-white">
-                                    Hello,
+                                    Hallo,
                                     <br />
                                     I&#39;m{' '}
                                     <span className="text-primary">
@@ -77,7 +105,11 @@ const HomeSection = () => {
                                 variants={fadeInVariants}
                             >
                                 <div className="relative z-40 pt-10 h-fit">
-                                    <div className="relative">
+                                    <motion.div
+                                        className="relative"
+                                        onHoverStart={startHoverImage}
+                                        onHoverEnd={endHoverImage}
+                                    >
                                         <Image
                                             src="/image/person.png"
                                             width={480}
@@ -85,11 +117,18 @@ const HomeSection = () => {
                                             alt="me"
                                             className="h-full aspect-[5/6] object-contain relative"
                                         />
-                                    </div>
+                                    </motion.div>
                                 </div>
                                 <div className="absolute inset-0 rounded-full border-[6px] border-transparent bg-gradient-to-r dark:from-blue-500 dark:via-purple-500 dark:to-pink-500 opacity-50 blur-3xl"></div>
                                 <div className="w-[120%] h-[120%] bg-primary/10 rounded-[50px] absolute top-64 left-64 backdrop-blur-lg bg-opacity-20 border border-white/10 shadow-md"></div>
-                                <div className="w-[100%] h-[75%] bg-primary-600/20 rounded-[50px] absolute bottom-0 left-1/2 transform -translate-x-1/2 backdrop-blur-md bg-opacity-30 border border-white/20 shadow-lg"></div>
+                                <motion.div
+                                    animate={controls}
+                                    className="w-[100%] h-[75%] bg-primary-600/10 rounded-[50px] absolute bottom-0 backdrop-blur-md bg-opacity-30 border border-white/20 shadow-lg"
+                                ></motion.div>
+                                <motion.div
+                                    animate={controls2}
+                                    className="w-[100%] h-[75%] bg-primary-600/20 rounded-[50px] absolute bottom-0 left-1/2 transform -translate-x-1/2 backdrop-blur-md bg-opacity-30 border border-white/20 shadow-lg"
+                                ></motion.div>
                             </motion.div>
                         </div>
                     </motion.div>
