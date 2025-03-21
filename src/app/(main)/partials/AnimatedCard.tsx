@@ -16,7 +16,7 @@ const AnimatedCard = ({
                 whileHover={{ y: -10 }} // Hiệu ứng nổi lên
             >
                 <motion.div
-                    className="w-[60px] aspect-square"
+                    className="aspect-square flex items-center justify-center"
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
                 >

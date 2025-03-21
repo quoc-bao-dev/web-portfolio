@@ -5,9 +5,9 @@ const ContactSection = () => {
         <section id="Contact">
             <Container>
                 <div className="py-24 ">
-                    <div className="pt-16">
-                        <div className="p-16  rounded-lg bg-primary-100  text-primary-900 grid grid-cols-3 gap-5">
-                            <div className="w-full col-span-2">
+                    <div className="md:pt-16">
+                        <div className="p-4 md:p-16  rounded-lg bg-primary-100  text-primary-900 grid md:grid-cols-3 gap-5">
+                            <div className="w-full md:col-span-2">
                                 <h3 className="text-2xl text-center">
                                     Contact
                                 </h3>

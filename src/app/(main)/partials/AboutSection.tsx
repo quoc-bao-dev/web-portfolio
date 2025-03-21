@@ -29,7 +29,7 @@ const AboutSection = () => {
                         About Me
                     </h2>
                     <motion.div
-                        className="pt-16 grid grid-cols-2 gap-5"
+                        className="pt-16 grid md:grid-cols-2 gap-5"
                         animate={aboutInView ? 'visible' : 'hidden'}
                     >
                         <motion.div
@@ -49,7 +49,7 @@ const AboutSection = () => {
                             />
                         </motion.div>
                         <motion.div
-                            className="w-full p-8 bg-primary-100 dark:bg-card text-primary dark:text-primary dark:border border-border rounded-lg"
+                            className="w-full p-4 md:p-8 bg-primary-100 dark:bg-card text-primary dark:text-primary dark:border border-border rounded-lg"
                             initial="hidden"
                             ref={textRef}
                             animate={textInView ? 'visible' : 'hidden'}
@@ -60,7 +60,7 @@ const AboutSection = () => {
                                 delay: 0.2,
                             }}
                         >
-                            <p className="text-lg">
+                            <p className="md:text-lg text-justify">
                                 My name is Quoc Bao, a Front-end Developer with
                                 a deep passion for technology. One of my most
                                 inspiring achievements is building Qyber, a
@@ -71,7 +71,7 @@ const AboutSection = () => {
                                 development easier and more productive.
                             </p>
 
-                            <p className="mt-6 font-medium text-lg">
+                            <p className="mt-6 font-medium md:text-lg">
                                 My Strengths:
                             </p>
                             <ul className="mt-1">

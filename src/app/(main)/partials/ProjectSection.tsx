@@ -99,7 +99,7 @@ const ProjectSection = () => {
         return (
             <li
                 className={cn(
-                    'flex items-center px-8 py-2 rounded-full cursor-pointer',
+                    'flex items-center px-4 md:px-8 py-1 md:py-2 text-sm md:text-base rounded-full cursor-pointer',
                     {
                         'bg-primary-500 hover:bg-primary-400 text-white':
                             tab === selectedTab,
@@ -148,10 +148,10 @@ const ProjectSection = () => {
                         className="mt-10  w-full overflow-hidden"
                         ref={emblaRef}
                     >
-                        <div className="flex -mx-4">
+                        <div className="flex -mx-4 ">
                             {listProject.map((proj) => (
                                 <div
-                                    className="px-4 w-1/3 shrink-0"
+                                    className="px-4 w-full md:w-1/3 shrink-0"
                                     key={proj.link}
                                 >
                                     <ProjectCard

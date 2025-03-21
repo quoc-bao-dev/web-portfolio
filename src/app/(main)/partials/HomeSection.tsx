@@ -66,7 +66,7 @@ const HomeSection = () => {
                                 <h1 className="text-3xl md:text-[64px] md:leading-[72px] font-bold text-primary dark:text-white">
                                     Hallo,
                                     <br />
-                                    I&#39;m{' '}
+                                    I&#39;m <br className="md:hidden" />
                                     <span className="text-primary">
                                         <Typewriter
                                             words={[
@@ -90,8 +90,8 @@ const HomeSection = () => {
                                     development, I am ready to turn your ideas
                                     into reality.
                                 </p>
-                                <div className="mt-10">
-                                    <button className="px-8 py-2 bg-primary font-bold text-white border-none outline-none rounded-lg">
+                                <div className="mt-10 ">
+                                    <button className="px-4 md:px-8 py-2 md:py-2 bg-primary font-bold text-white border-none outline-none rounded-lg">
                                         Portfolio
                                     </button>
                                 </div>

@@ -27,57 +27,57 @@ const SkillSection = () => {
                         Technical Skills
                     </h2>
                     <div className="pt-16">
-                        <div className="p-16 border-border rounded-lg dark:bg-card  bg-primary-100 text-primary grid grid-cols-6 gap-10">
+                        <div className="p-4 md:p-16 border-border rounded-lg dark:bg-card  bg-primary-100 text-primary grid md:grid-cols-6 grid-cols-3 gap-2 md:gap-10">
                             <AnimatedCard label="React">
-                                <ReactJs />
+                                <ReactJs className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Redux">
-                                <Redux />
+                                <Redux className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Next Js">
-                                <NextJs />
+                                <NextJs className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Angular">
-                                <Angular />
+                                <Angular className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Vue Js">
-                                <VueJs />
+                                <VueJs className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Nuxt Js">
-                                <Nuxt />
+                                <Nuxt className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Javascript">
-                                <Javascript />
+                                <Javascript className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Typescript">
-                                <Typescript />
+                                <Typescript className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Node Js">
-                                <NodeJs />
+                                <NodeJs className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Express Js">
-                                <Express />
+                                <Express className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Fastify Js">
-                                <Fastify />
+                                <Fastify className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Mongo">
-                                <Mongo />
+                                <Mongo className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Git">
-                                <Git />
+                                <Git className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Docker">
-                                <Docker />
+                                <Docker className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Redis">
-                                <Redis />
+                                <Redis className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Jest">
-                                <Jest />
+                                <Jest className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                             <AnimatedCard label="Socket IO">
-                                <Socket />
+                                <Socket className="size-10 md:size-[60px]" />
                             </AnimatedCard>
                         </div>
                     </div>
