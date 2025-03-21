@@ -26,6 +26,9 @@ export default function Home() {
             ) {
                 setTab(item.label);
                 if (rect.top >= -100 && rect.top <= 100) {
+                    if (item.label === 'Home') {
+                        return;
+                    }
                     element.scrollIntoView({ behavior: 'smooth' });
                 }
             }

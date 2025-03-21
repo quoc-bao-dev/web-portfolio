@@ -45,10 +45,10 @@ const NavBarItem = ({ label }: NavBarItemProps) => {
     );
 };
 const NavBar = () => {
-    // const setTab = useNavbar((state) => state.setTab);
-    // useEffect(() => {
-    //     setTab(NAV_ITEMS[0].href);
-    // }, []);
+    const setTab = useNavbar((state) => state.setTab);
+    useEffect(() => {
+        setTab(NAV_ITEMS[0].label);
+    }, []);
     return (
         <nav>
             <ul className="flex items-center gap-5">

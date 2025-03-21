@@ -17,8 +17,8 @@ const HomeSection = () => {
     const startHoverImage = () => {
         controls.start({
             scale: 1.1,
-            rotate: 10,
-            transition: { duration: 0.3 },
+            rotate: 1090,
+            transition: { duration: 0.9, type: 'tween' },
             opacity: 0.5,
             boxShadow:
                 '0 0 20px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.6)',
@@ -123,11 +123,11 @@ const HomeSection = () => {
                                 <div className="w-[120%] h-[120%] bg-primary/10 rounded-[50px] absolute top-64 left-64 backdrop-blur-lg bg-opacity-20 border border-white/10 shadow-md"></div>
                                 <motion.div
                                     animate={controls}
-                                    className="w-[100%] h-[75%] bg-primary-600/10 rounded-[50px] absolute bottom-0 backdrop-blur-md bg-opacity-30 border border-white/20 shadow-lg"
+                                    className="w-[100%] h-[75%] bg-primary-600/10 rounded-[50px] backdrop:blur-lg absolute bottom-0 backdrop-blur-md bg-opacity-30 border border-white/20 shadow-lg"
                                 ></motion.div>
                                 <motion.div
                                     animate={controls2}
-                                    className="w-[100%] h-[75%] bg-primary-600/20 rounded-[50px] absolute bottom-0 left-1/2 transform -translate-x-1/2 backdrop-blur-md bg-opacity-30 border border-white/20 shadow-lg"
+                                    className="w-[100%] h-[75%] bg-primary-600/20 rounded-[50px] backdrop:blur-lg absolute bottom-0 left-1/2 transform -translate-x-1/2 backdrop-blur-md bg-opacity-30 border border-white/20 shadow-lg"
                                 ></motion.div>
                             </motion.div>
                         </div>
