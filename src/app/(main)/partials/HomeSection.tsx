@@ -17,8 +17,8 @@ const HomeSection = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/cv/quoc-bao-dev.pdf";
-    link.download = "quoc-bao-dev.pdf";
+    link.href = "/cv/cv-front-end.pdf";
+    link.download = "cv-front-end.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
