@@ -25,22 +25,22 @@ const tabs = [
   },
 ];
 const projects = [
-  {
-    thumb: "/image/golden-spoon.png",
-    title: "Golden Spoon",
-    techStack: ["Next.js", "Tailwind", "SePay"],
-    detail: {
-      description:
-        "Golden Spoons: eVoucher Marketplace\n\nTech Stack: Next.js, Tailwind CSS, TanStack Query.",
-      features: [
-        "Built the platform from scratch and implemented complex business logic.",
-        "Integrated payment gateway and handled payment processing workflows.",
-        "Managed large-scale data tables efficiently, ensuring smooth UI and performance.",
-      ],
-    },
-    link: "https://golden-spoon-admin.vercel.app/",
-    tags: ["web"],
-  },
+  // {
+  //   thumb: "/image/golden-spoon.png",
+  //   title: "Golden Spoon",
+  //   techStack: ["Next.js", "Tailwind", "SePay"],
+  //   detail: {
+  //     description:
+  //       "Golden Spoons: eVoucher Marketplace\n\nTech Stack: Next.js, Tailwind CSS, TanStack Query.",
+  //     features: [
+  //       "Built the platform from scratch and implemented complex business logic.",
+  //       "Integrated payment gateway and handled payment processing workflows.",
+  //       "Managed large-scale data tables efficiently, ensuring smooth UI and performance.",
+  //     ],
+  //   },
+  //   link: "https://golden-spoon-admin.vercel.app/",
+  //   tags: ["web"],
+  // },
   {
     thumb: "/image/theom.png",
     title: "The Om Lounge",
